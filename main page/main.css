@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc; /* Light background for a clean look */
+    color: #333;
+}
+
+header {
+    background-color: #001f3f; /* Dark blue for header */
+    color: white;
+    padding: 20px 0; /* Increased padding for a more spacious look */
+    text-align: center;
+}
+
+h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 2.5em; /* Larger heading */
+    letter-spacing: 1px; /* Add spacing between letters */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0; /* Space between header and nav */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+nav ul li a:hover {
+    color: #d3d3d3; /* Lighten link color on hover */
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto; /* Center section with auto margin */
+    max-width: 600px; /* Max width for better readability */
+    background-color: white; /* White background for sections */
+    border-radius: 8px; /* Round corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+h2 {
+    font-size: 1.5em; /* Subheading size */
+    margin-bottom: 15px; /* Space below subheading */
+    color: #001f3f; /* Dark blue color for headings */
+    border-bottom: 2px solid #007bff; /* Underline effect in blue */
+    padding-bottom: 5px; /* Space below underline */
+}
+
+input[type="text"], select {
+    padding: 10px;
+    width: calc(100% - 22px);
+    margin: 10px 0;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Round corners */
+    transition: border 0.3s; /* Smooth transition for focus */
+}
+
+input[type="text"]:focus, select:focus {
+    border-color: #007bff; /* Change border color to blue on focus */
+    outline: none; /* Remove outline */
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px 0; /* Space above and below buttons */
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Blue background for buttons */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darken button color on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+#timer-display {
+    font-size: 24px;
+    margin: 10px 0;
+    font-weight: bold; /* Bold display */
+    color: #001f3f; /* Dark blue for timer display */
+}
+
+#todo-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#todo-list li {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.completed {
+    text-decoration: line-through;
+    transition: all 0.3s ease;
+    color: #aaa;
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block; /* Stack links on smaller screens */
+        margin: 5px 0;
+    }
+
+    button {
+        width: 100%; /* Make buttons full width */
+    }
+}
