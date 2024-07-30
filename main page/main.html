@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Lifestyle</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://apis.google.com/js/api.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Student Lifestyle</h1>
+        <nav>
+            <ul>
+                <li><a href="#calendar-section">Calendar</a></li>
+                <li><a href="#pomodoro-section">Pomodoro Timer</a></li>
+                <li><a href="#todo-section">To Do List</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="calendar-section">
+        <h2>Google Calendar</h2>
+        <input type="text" id="gmail" placeholder="Enter your Gmail">
+        <button id="load-calendar">Load Calendar</button>
+        <div id="calendar"></div>
+    </section>
+
+    <section id="pomodoro-section">
+        <h2>Pomodoro Timer</h2>
+        <select id="pomodoro-duration">
+            <option value="1800">30 mins</option>
+            <option value="2700">45 mins</option>
+            <option value="3600">1 hr</option>
+            <option value="5400">1 hr 30 mins</option>
+            <option value="7200">2 hrs</option>
+            <option value="10800">3 hrs</option>
+        </select>
+        <button id="start-timer">Start Timer</button>
+        <button id="stop-timer">Stop Timer</button>
+        <button id="reset-timer">Reset Timer</button>
+        <div id="timer-display">00:00</div>
+    </section>
+
+    <section id="todo-section">
+        <h2>To Do List</h2>
+        <input type="text" id="todo-input" placeholder="Add a new task">
+        <button id="add-todo">Add Task</button>
+        <ul id="todo-list"></ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
